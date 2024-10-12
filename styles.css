@@ -242,3 +242,130 @@ footer{
 
 
 
+
+
+/* General styling for product details page */
+.product-details-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'roboto',sans-serif;
+    /* max-width: 1200px; */
+    /* gap: 20px; */
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.product-details-image img {
+    width: 100%;
+    /* max-width: 500px; */
+    height: auto;
+}
+
+.product-details-content {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 80%;
+    align-items: flex-start;
+}
+
+.product-details-content p {
+    font-size: 20px;
+}
+
+.product-details-price {
+    font-size: 13px;
+    margin: 12px 0 32px;
+}
+
+.product-details-options {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-details-options label {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.product-details-options select {
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    width: 70%;
+}
+
+.product-size{
+    display: flex;
+    align-items: center;
+}
+
+.product-quantity{
+    display: flex;
+    align-items: center;
+}
+
+.product-details-description h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-details-description p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.product-details-description ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.product-details-cart-button {
+    margin-top: 20px;
+}
+
+.product-details-cart-button button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.product-details-cart-button button:hover {
+    background-color: #555;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .product-details-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-details-image img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Tablet and web view */
+@media (min-width: 769px) {
+    .product-details-container {
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .product-details-image {
+        width: 50%;
+    }
+
+    .product-details-content {
+        width: 50%;
+    }
+}
