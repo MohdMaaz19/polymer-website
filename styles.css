@@ -258,12 +258,11 @@ footer{
 
 .product-details-image img {
     width: 100%;
-    /* max-width: 500px; */
+    max-width: 600px;
     height: auto;
 }
 
 .product-details-content {
-    font-size: 20px;
     display: flex;
     flex-direction: column;
     padding: 30px;
@@ -271,37 +270,48 @@ footer{
     align-items: flex-start;
 }
 
-.product-details-content p {
+#product-name{
     font-size: 20px;
 }
 
-.product-details-price {
+.product-price {
     font-size: 13px;
     margin: 12px 0 32px;
+    opacity: 0.5;
 }
 
 .product-details-options {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .product-details-options label {
+    opacity: 0.5;
     font-size: 13px;
-    margin-bottom: 5px;
 }
 
 .product-details-options select {
-    padding: 8px;
     font-size: 16px;
     border: none;
     background-color: transparent;
     outline: none;
-    width: 70%;
+    width: 100%;
+}
+
+#size{
+    padding: 16px 24px 16px 45.89px;
+}
+
+#quantity{
+    padding: 16px 24px 16px 21.84px;
 }
 
 .product-size{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .product-quantity{
@@ -309,23 +319,43 @@ footer{
     align-items: center;
 }
 
+.product-details-description{
+    width: 100%;
+}
+
 .product-details-description h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 13px;
+    margin: 24px 0 16px;
 }
 
 .product-details-description p {
-    font-size: 16px;
+    font-size: 13px;
     margin-bottom: 20px;
+    opacity: 0.5;
+    text-align: justify;
+}
+
+.product-details-description h4 {
+    font-size: 13px;
+    opacity: 0.5;
+    margin: 0 0 16px;
 }
 
 .product-details-description ul {
     list-style-type: disc;
-    padding-left: 20px;
+    font-size: 13px;
+    opacity: 0.5;
+    padding-left: 40px;
+    margin-top: 13px;
+    margin-bottom: 40px;
 }
 
 .product-details-cart-button {
-    margin-top: 20px;
+    width: 100%;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    /* z-index: 10; */
 }
 
 .product-details-cart-button button {
@@ -335,6 +365,7 @@ footer{
     font-size: 16px;
     cursor: pointer;
     border: none;
+    width: 100%;
 }
 
 .product-details-cart-button button:hover {
@@ -355,7 +386,7 @@ footer{
 }
 
 /* Tablet and web view */
-@media (min-width: 769px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     .product-details-container {
         flex-direction: row;
         gap: 50px;
@@ -368,4 +399,80 @@ footer{
     .product-details-content {
         width: 50%;
     }
+
+    .product-details-cart-button {
+        position: static; /* Reset to default positioning */
+        width: auto; /* Button will adjust according to content size */
+        margin-top: 20px; /* Add spacing from the content */
+    }
+
+    .product-details-cart-button button {
+        width: 100%; /* Still take full width within the content */
+        background-color: white;
+        border: 2px solid black;
+        color: black;
+    }
+}
+
+
+/* General styling for product details page */
+
+.checkout-container{
+    display: flex;
+    flex-direction: column;
+    font-family: 'roboto',sans-serif;
+    padding: 0 24px 48px;
+}
+
+.checkout-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkout-heading h1{
+    font-size: 14.3px;
+    margin: 0 0 4px;
+}
+
+.checkout-heading p{
+    font-size: 12px;
+}
+
+.checkout-container h2{
+    font-size: 13px;
+    margin: 10.79px 0;
+}
+
+.checkout-container input{
+    font-size: 13px;
+    padding: 8px 0;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.state-zipcode{
+    display:flex;
+    gap:10px;
+}
+
+.checkout-container label{
+    font-size: 13px;
+}
+
+.checkout-container select{
+    font-size: 16px;
+    padding: 8px 24px 8px 0px;
+    border: none;
+    outline: none;
+    background-color: white;
+    border-bottom: 0.5px solid black;
+}
+
+.billing-address{
+    display: flex;
+    justify-content: flex-start;
 }
