@@ -475,4 +475,52 @@ footer{
 .billing-address{
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+#setBilling{
+    width: auto;
+}
+
+.cc-expiry{
+    display:flex;
+    width: 100%;
+    gap: 10px;
+}
+
+#cvv{
+    margin: 0;
+    font-size: 16px;
+    width: 33%;
+}
+
+#ccExpMonth{
+    width: 33%;
+}
+
+#ccExpYear{
+    width: 33%;
+}
+
+#order-summary p{
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.cart-item-1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-item-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
 }

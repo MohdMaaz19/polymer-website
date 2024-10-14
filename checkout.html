@@ -60,8 +60,8 @@
             <input type="text" placeholder="Cardholder Name">
             <input type="text" placeholder="Card Number">
             <label for="Expiry">Expiry</label>
-            <div>
-                <select name="ccExpMonth" id="">
+            <div class="cc-expiry">
+                <select name="ccExpMonth" id="ccExpMonth">
                     <option value="01">Jan</option>
                     <option value="02">Feb</option>
                     <option value="03">Mar</option>
@@ -75,7 +75,7 @@
                     <option value="11">Nov</option>
                     <option value="12">Dec</option>
                 </select>
-                <select name="ccExpYear" id="">
+                <select name="ccExpYear" id="ccExpYear">
                     <option value="2024">2024</option>
                     <option value="2025">2025</option>
                     <option value="2026">2026</option>
@@ -88,16 +88,27 @@
                     <option value="2033">2033</option>
                     <option value="2034">2034</option>
                 </select>
-                <input type="tel" placeholder="CVV">
+                <input type="tel" placeholder="CVV" id="cvv">
             </div>
 
             <h2>Order Summary</h2>
-            <div>Men's Tech Shell Full-Zip</div>
-            <div>$50.20</div>
-            <div>Android Nylon Packable Jacket</div>
-            <div>$33.60</div>
-            <div>Total</div>
-            <div>$83.80</div>
+            <div id="order-summary">
+                <div class="cart-item-1">
+                    <p>Men's Tech Shell Full-Zip</p>
+                    <p>$50.20</p>
+                </div>
+                <div class="cart-item-2">
+                    <p>Android Nylon Packable Jacket</p>
+                    <p>$33.60</p>
+                </div>
+                <div class="total">   
+                    <p>Total</p>
+                    <p>$83.80</p>
+                </div>
+            </div>
+            <div class="product-details-cart-button">
+                <button>PLACE ORDER</button>
+            </div>
         </div>
     </main>
 </body>
